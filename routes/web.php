@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', "Reg\RegController@getReg");
+Route::get('login', "Reg\RegController@login");
+Route::get('reg', "Reg\RegController@reg");
